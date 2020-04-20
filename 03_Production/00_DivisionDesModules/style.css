@@ -1,6 +1,94 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+}
+
+footer > p {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--couleurNoir);
+}
+
+header > h1 {
+  color: var(--couleurBlanc);
+  border: 2px solid white;
+  padding: 0.25em 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4vh;
+}
+
+header > img {
+  color: var(--couleurNoir);
+}
+
+.deuxieme {
+  height: 26rem;
+}
+
+.sectionRecette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionRecette .recette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0.25em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionRecette .recette img {
+  width: 20vw;
+}
+
+.sectionRecette .recette p.titreRecette {
+  font-size: 1rem;
+  text-align: none;
+  margin: 0em;
+}
+
+.sectionRecette .recette a {
+  text-decoration: none;
+  background-color: var(--couleurVerte);
+  color: #ffffff;
+  padding: 0.25em;
+}
+
 :root {
   --couleurVerte: hsl(66.84, 40.51%, 76.47%);
   --couleurOrange: rgb(254, 106, 92);
+  --couleurBlanc: hsl(0, 0%, 100%);
+  --couleurNoir: hsl(0, 0%, 0%);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -52,6 +140,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }*/
+ul {
+  display: none;
+}
+
 .wrapper {
   width: 95vw;
   margin: 0 auto;
@@ -97,93 +189,35 @@ section .coteacote img {
   width: 50%;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #000000;
-}
-
-footer > p {
-  color: #ffffff;
-  font-size: 0.8rem;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #000000;
-}
-
-header > h1 {
-  color: #ffffff;
-  border: 2px solid white;
-  padding: 0.25em 0.5em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 4vh;
-}
-
-header > img {
-  color: white;
-}
-
-.deuxieme {
-  height: 26rem;
-}
-
-.sectionRecette {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sectionRecette .recette {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 0.25em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sectionRecette .recette img {
-  width: 20vw;
-}
-
-.sectionRecette .recette p.titreRecette {
-  font-size: 1rem;
-  text-align: none;
-  margin: 0em;
-}
-
-.sectionRecette .recette a {
-  text-decoration: none;
-  background-color: var(--couleurVerte);
-  color: #ffffff;
-  padding: 0.25em;
-}
-
-html {
-  background-color: var(--couleurOragne);
+@media screen and (min-width: 767px) {
+  header {
+    background-image: url(../../../_assets/_link/entete-original.jpg);
+    background-size: cover;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--couleurNoir);
+    padding: 1em;
+    margin: 0em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  ul > li {
+    text-decoration: none;
+    list-style: none;
+    padding: 1em 0em;
+  }
+  ul > li > a {
+    color: var(--couleurBlanc);
+    text-decoration: none;
+    padding: 1em 1rem;
+  }
+  ul a:hover {
+    background-color: var(--couleurBlanc);
+    color: var(--couleurNoir);
+  }
 }
 /*# sourceMappingURL=style.css.map */

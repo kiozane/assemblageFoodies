@@ -1,0 +1,28 @@
+@media screen and (min-width: 767px){
+    header{
+        background-image: url(../../../_assets/_link/entete-original.jpg);
+        background-size: cover;
+    }
+    ul{
+        display: flex;
+        background-color: var(--couleurNoir);
+        padding: 1em;
+        margin: 0em;
+        justify-content: space-evenly;
+        & > li  {
+            text-decoration: none;
+            list-style: none;
+            padding: 1em 0em;
+            & > a {
+                color: var(--couleurBlanc);
+                text-decoration: none;
+                padding:1em 1rem;
+               
+            }
+        }
+        a:hover{
+            background-color: var(--couleurBlanc);
+            color: var(--couleurNoir);
+        }
+    }
+}
