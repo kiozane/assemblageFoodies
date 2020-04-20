@@ -1,24 +1,35 @@
-.deuxieme{
+.deuxieme {
     height: 26rem;
 }
-.sectionRecette{
+
+.sectionRecette {
     display: flex;
-    justify-content:space-between;
-    .recette{
-        img{
+    justify-content: space-between;
+
+    .recette {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.25em;
+        justify-content: center;
+        align-items: center;
+
+        img {
             width: 20vw;
         }
-        p.titreRecette{
+
+        p.titreRecette {
             font-size: 1rem;
             text-align: none;
             margin: 0em;
+
         }
+
         a {
             text-decoration: none;
             background-color: var(--couleurVerte);
             color: #ffffff;
             padding: 0.25em;
-            
+
         }
     }
 }
