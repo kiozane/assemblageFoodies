@@ -1,6 +1,6 @@
 :root {
   --couleurVerte: hsl(66.84, 40.51%, 76.47%);
-  --couleurOrange: hsl(5.19, 63.78%, 99.61%);
+  --couleurOrange: rgb(254, 106, 92);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -52,6 +52,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }*/
+h2,
+h3 {
+  text-align: center;
+  margin: 0em;
+}
+
+.collab {
+  background-color: var(--couleurVerte);
+  color: #ffffff;
+  padding: 1em 1em 1em 0.5em;
+  margin: 0rem;
+}
+
+h3 {
+  color: lightgray;
+}
+
+section h2.titreSection {
+  color: var(--couleurOrange);
+  margin-top: 0.5em;
+}
+
+section .coteacote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .coteacote img {
+  width: 50%;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +96,7 @@ footer {
 
 footer > p {
   color: #ffffff;
+  font-size: 0.8rem;
 }
 
 header {
@@ -78,10 +111,46 @@ header {
 
 header > h1 {
   color: #ffffff;
+  border: 2px solid white;
+  padding: 0.25em 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4vh;
 }
 
 header > img {
   color: white;
+}
+
+.deuxieme {
+  height: 26rem;
+}
+
+.sectionRecette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionRecette .recette img {
+  width: 20vw;
+}
+
+.sectionRecette .recette p.titreRecette {
+  font-size: 1rem;
+  text-align: none;
+  margin: 0em;
+}
+
+.sectionRecette .recette a {
+  text-decoration: none;
+  background-color: var(--couleurVerte);
+  color: #ffffff;
+  padding: 0.25em;
 }
 
 html {

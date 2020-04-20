@@ -1,0 +1,24 @@
+.deuxieme{
+    height: 26rem;
+}
+.sectionRecette{
+    display: flex;
+    justify-content:space-between;
+    .recette{
+        img{
+            width: 20vw;
+        }
+        p.titreRecette{
+            font-size: 1rem;
+            text-align: none;
+            margin: 0em;
+        }
+        a {
+            text-decoration: none;
+            background-color: var(--couleurVerte);
+            color: #ffffff;
+            padding: 0.25em;
+            
+        }
+    }
+}

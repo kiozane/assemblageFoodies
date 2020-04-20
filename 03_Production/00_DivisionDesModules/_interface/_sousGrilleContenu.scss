@@ -1,0 +1,27 @@
+h2,
+h3 {
+    text-align: center;
+    margin: 0em;
+   
+}
+.collab {
+    background-color: var(--couleurVerte);
+    color: #ffffff;
+    padding: 1em 1em 1em 0.5em;
+    margin: 0rem;
+}
+h3 {
+    color: lightgray;
+}
+section {
+    h2.titreSection{
+        color: var(--couleurOrange);
+        margin-top: 0.5em;
+    }
+    .coteacote{
+        display: flex;
+        img {
+            width: 50%;
+        }
+    }
+}
