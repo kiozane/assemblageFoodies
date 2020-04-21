@@ -10,21 +10,36 @@
             display: none;
         }
     }
+    .collab{
+        width: 80vw;
+        padding: 0.5em 0em ;
+        margin: 1em  0em 0em 3em;
+    }
     .wrapper{
         width:70vw;
         display: flex;
         justify-content: center;
         aside{
             display: block;
-            background-color: var(--couleurOrange);
+            padding-right: 2em;
             
+        }
+        .profilAside{
+            width: 5em;
+            border: solid 3px var(--couleurNoir);
+            padding: 0.25em;
         }
         .contenu{
             display: inline;
            flex-grow: 40;
         }
-        
-       
+        .prenom,
+        .nom{
+            text-align: center;
+        }
+       .pub{
+           width: 5em;
+       }
     }
     
     ul{
@@ -48,5 +63,10 @@
             background-color: var(--couleurBlanc);
             color: var(--couleurNoir);
         }
+    }
+}
+@media screen and (min-width: 1024px){
+    header{
+        background-size: cover;
     }
 }

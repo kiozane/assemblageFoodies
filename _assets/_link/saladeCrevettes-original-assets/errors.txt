@@ -1,0 +1,3 @@
+[2020-4-21 14:34:46] layer "170x? crevette-170.jpg, 474x? crevette-474.jpg, 864x? crevette-864.jpg": Duplicate path: crevette-170.jpg
+[2020-4-21 14:34:47] layer "170x? crevette-170.jpg, 474x? crevette-474.jpg, 864x? crevette-864.jpg": Duplicate path: crevette-474.jpg
+[2020-4-21 14:34:47] layer "170x? crevette-170.jpg, 474x? crevette-474.jpg, 864x? crevette-864.jpg": Duplicate path: crevette-864.jpg

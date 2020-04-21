@@ -6,6 +6,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #000000;
+  margin-top: 3em;
 }
 
 footer > p {
@@ -35,6 +36,15 @@ header > h1 {
 
 header > img {
   color: var(--couleurNoir);
+}
+
+header .profil {
+  width: 3em;
+  position: absolute;
+  right: 1em;
+  top: 0.75em;
+  border: solid 3px var(--couleurBlanc);
+  padding: 0.25em;
 }
 
 .deuxieme {
@@ -205,6 +215,11 @@ section .coteacote img {
   header img {
     display: none;
   }
+  .collab {
+    width: 80vw;
+    padding: 0.5em 0em;
+    margin: 1em  0em 0em 3em;
+  }
   .wrapper {
     width: 70vw;
     display: -webkit-box;
@@ -216,13 +231,25 @@ section .coteacote img {
   }
   .wrapper aside {
     display: block;
-    background-color: var(--couleurOrange);
+    padding-right: 2em;
+  }
+  .wrapper .profilAside {
+    width: 5em;
+    border: solid 3px var(--couleurNoir);
+    padding: 0.25em;
   }
   .wrapper .contenu {
     display: inline;
     -webkit-box-flex: 40;
         -ms-flex-positive: 40;
             flex-grow: 40;
+  }
+  .wrapper .prenom,
+  .wrapper .nom {
+    text-align: center;
+  }
+  .wrapper .pub {
+    width: 5em;
   }
   ul {
     display: -webkit-box;
@@ -248,6 +275,12 @@ section .coteacote img {
   ul a:hover {
     background-color: var(--couleurBlanc);
     color: var(--couleurNoir);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */

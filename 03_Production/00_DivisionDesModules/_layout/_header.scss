@@ -12,5 +12,12 @@ header{
     & > img {
         color: var(--couleurNoir);
     }
-
+    .profil{
+        width: 3em;
+        position: absolute;
+        right: 1em;
+        top:0.75em;
+        border: solid 3px var(--couleurBlanc);
+        padding: 0.25em;
+    }
 }
