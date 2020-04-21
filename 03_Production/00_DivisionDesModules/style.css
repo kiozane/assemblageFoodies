@@ -3,13 +3,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #000000;
   margin-top: 3em;
 }
 
-footer > p {
+footer>p {
   color: #ffffff;
   font-size: 0.8rem;
 }
@@ -19,22 +19,22 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: var(--couleurNoir);
 }
 
-header > h1 {
+header>h1 {
   color: var(--couleurBlanc);
   border: 2px solid white;
   padding: 0.25em 0.5em;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 4vh;
 }
 
-header > img {
+header>img {
   color: var(--couleurNoir);
 }
 
@@ -56,8 +56,8 @@ header .profil {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .sectionRecette .recette {
@@ -66,15 +66,15 @@ header .profil {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-left: 0.25em;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sectionRecette .recette img {
@@ -92,13 +92,6 @@ header .profil {
   background-color: var(--couleurVerte);
   color: #ffffff;
   padding: 0.25em;
-}
-
-:root {
-  --couleurVerte: hsl(66.84, 40.51%, 76.47%);
-  --couleurOrange: rgb(254, 106, 92);
-  --couleurBlanc: hsl(0, 0%, 100%);
-  --couleurNoir: hsl(0, 0%, 0%);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -150,6 +143,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }*/
+:root {
+  --couleurVerte: hsl(66.84, 40.51%, 76.47%);
+  --couleurOrange: rgb(254, 106, 92);
+  --couleurBlanc: hsl(0, 0%, 100%);
+  --couleurNoir: hsl(0, 0%, 0%);
+}
+
 ul {
   display: none;
 }
@@ -163,8 +163,8 @@ aside {
   margin: 0 auto;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 h2,
@@ -209,48 +209,58 @@ section .coteacote img {
     background-size: cover;
     height: 20vh;
   }
+
   header i {
     display: none;
   }
+
   header img {
     display: none;
   }
+
   .collab {
     width: 80vw;
     padding: 0.5em 0em;
-    margin: 1em  0em 0em 3em;
+    margin: 1em 0em 0em 3em;
   }
+
   .wrapper {
     width: 70vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .wrapper aside {
     display: block;
     padding-right: 2em;
   }
+
   .wrapper .profilAside {
     width: 5em;
     border: solid 3px var(--couleurNoir);
     padding: 0.25em;
   }
+
   .wrapper .contenu {
     display: inline;
     -webkit-box-flex: 40;
-        -ms-flex-positive: 40;
-            flex-grow: 40;
+    -ms-flex-positive: 40;
+    flex-grow: 40;
   }
+
   .wrapper .prenom,
   .wrapper .nom {
     text-align: center;
   }
+
   .wrapper .pub {
     width: 5em;
   }
+
   ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,19 +269,22 @@ section .coteacote img {
     padding: 1em;
     margin: 0em;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
-  ul > li {
+
+  ul>li {
     text-decoration: none;
     list-style: none;
     padding: 1em 0em;
   }
-  ul > li > a {
+
+  ul>li>a {
     color: var(--couleurBlanc);
     text-decoration: none;
     padding: 1em 1rem;
   }
+
   ul a:hover {
     background-color: var(--couleurBlanc);
     color: var(--couleurNoir);
@@ -283,4 +296,5 @@ section .coteacote img {
     background-size: cover;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

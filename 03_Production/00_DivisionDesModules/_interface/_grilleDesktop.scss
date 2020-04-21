@@ -1,72 +1,85 @@
-@media screen and (min-width: 767px){
-    header{
+@media screen and (min-width: 767px) {
+    header {
         background-image: url(../../../_assets/_link/entete-original.jpg);
         background-size: cover;
         height: 20vh;
-        i{
+
+        i {
             display: none;
         }
-        img{
+
+        img {
             display: none;
         }
     }
-    .collab{
+
+    .collab {
         width: 80vw;
-        padding: 0.5em 0em ;
-        margin: 1em  0em 0em 3em;
+        padding: 0.5em 0em;
+        margin: 1em 0em 0em 3em;
     }
-    .wrapper{
-        width:70vw;
+
+    .wrapper {
+        width: 70vw;
         display: flex;
         justify-content: center;
-        aside{
+
+        aside {
             display: block;
             padding-right: 2em;
-            
+
         }
-        .profilAside{
+
+        .profilAside {
             width: 5em;
             border: solid 3px var(--couleurNoir);
             padding: 0.25em;
         }
-        .contenu{
+
+        .contenu {
             display: inline;
-           flex-grow: 40;
+            flex-grow: 40;
         }
+
         .prenom,
-        .nom{
+        .nom {
             text-align: center;
         }
-       .pub{
-           width: 5em;
-       }
+
+        .pub {
+            width: 5em;
+        }
     }
-    
-    ul{
+
+    ul {
         display: flex;
         background-color: var(--couleurNoir);
         padding: 1em;
         margin: 0em;
         justify-content: space-evenly;
-        & > li  {
+
+        &>li {
             text-decoration: none;
             list-style: none;
             padding: 1em 0em;
-            & > a {
+
+            &>a {
                 color: var(--couleurBlanc);
                 text-decoration: none;
-                padding:1em 1rem;
-               
+                padding: 1em 1rem;
+
             }
         }
-        a:hover{
+
+        a:hover {
             background-color: var(--couleurBlanc);
             color: var(--couleurNoir);
         }
     }
 }
-@media screen and (min-width: 1024px){
-    header{
+
+@media screen and (min-width: 1024px) {
+    header {
         background-size: cover;
     }
 }
