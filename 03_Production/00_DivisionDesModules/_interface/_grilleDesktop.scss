@@ -2,7 +2,31 @@
     header{
         background-image: url(../../../_assets/_link/entete-original.jpg);
         background-size: cover;
+        height: 20vh;
+        i{
+            display: none;
+        }
+        img{
+            display: none;
+        }
     }
+    .wrapper{
+        width:70vw;
+        display: flex;
+        justify-content: center;
+        aside{
+            display: block;
+            background-color: var(--couleurOrange);
+            
+        }
+        .contenu{
+            display: inline;
+           flex-grow: 40;
+        }
+        
+       
+    }
+    
     ul{
         display: flex;
         background-color: var(--couleurNoir);

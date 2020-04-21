@@ -144,6 +144,10 @@ ul {
   display: none;
 }
 
+aside {
+  display: none;
+}
+
 .wrapper {
   width: 95vw;
   margin: 0 auto;
@@ -193,6 +197,32 @@ section .coteacote img {
   header {
     background-image: url(../../../_assets/_link/entete-original.jpg);
     background-size: cover;
+    height: 20vh;
+  }
+  header i {
+    display: none;
+  }
+  header img {
+    display: none;
+  }
+  .wrapper {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper aside {
+    display: block;
+    background-color: var(--couleurOrange);
+  }
+  .wrapper .contenu {
+    display: inline;
+    -webkit-box-flex: 40;
+        -ms-flex-positive: 40;
+            flex-grow: 40;
   }
   ul {
     display: -webkit-box;
