@@ -585,14 +585,6 @@ header > img {
   color: var(--couleurNoir);
 }
 
-header i {
-  color: var(--couleurBlanc);
-}
-
-header i:hover {
-  cursor: pointer;
-}
-
 .deuxieme {
   height: 26rem;
 }
@@ -644,11 +636,41 @@ header i:hover {
   padding: 0.25em;
 }
 
-ul {
-  display: none;
+.menuPrincipal .fas {
+  color: var(--couleurOrange);
 }
 
-ul.menuMobile {
-  display: inline;
+.menuPrincipal .fas:hover {
+  cursor: pointer;
+}
+
+.menuPrincipal nav {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--couleurNoir);
+}
+
+.menuPrincipal nav ul li {
+  color: white;
+  margin-top: 1em;
+  list-style: none;
+  text-align: center;
+}
+
+.menuPrincipal nav ul li a {
+  color: var(--couleurNoir);
+  text-decoration: none;
+  background-color: var(--couleurBlanc);
+  padding: 0.5em 5em;
+}
+
+.menuFerme {
+  left: -300%;
+}
+
+.menuOuvert {
+  left: 0%;
 }
 /*# sourceMappingURL=style.css.map */
