@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/1d649a8210.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../00_DivisionDesModules/style.css">
     <title>LEOS1761596_foodies</title>
@@ -11,7 +12,7 @@
 
 <body>
     <nav>
-        <ul>
+        <ul class="menuMobile">
             <li><a href="">Recettes</a></li>
             <li><a href="">accord mets-vins</a></li>
             <li><a href="">accord mets-bières</a></li>
@@ -23,14 +24,16 @@
     <header>
         <i class="fas fa-bars"></i>
         <img src="../../_assets/_link/Foodie_logo.png" class="logo" alt="logo foodies">
-        <img class="profil" src="../../_assets/_link/Fichier 2.png" alt="photo de profil">
+        
     </header>
     <h2 class="collab">Collaboration spéciale</h2>
     <div class="wrapper">
         <aside>
-            <img class="profilAside" src="../../_assets/_link/Fichier 1.png" alt="photo de profil">
-            <p class="prenom">Samuel</p>
-            <p class="nom">Léonard</p>
+            <div class="zoneP">
+                <img class="profilAside" src="../../_assets/_link/Fichier 1.png" alt="photo de profil">
+                <p class="prenom">Samuel</p>
+                <p class="nom">Léonard</p>
+            </div>
             <img class="pub" src="../../_assets/_link/pub-assets/Fichier 1.png" alt="publicité1">
             <img class="pub" src="../../_assets/_link/pub-assets/Fichier 2.png" alt="publicité2">
             <img class="pub" src="../../_assets/_link/pub-assets/Fichier 3.png" alt="publicité3">
@@ -97,6 +100,7 @@
     <footer>
         <p>&copy; CSTJ | Technique d'intégration multimédia 2020 - projet foodies mi-session</p>
     </footer>
+    <script src="JS/animation.js"></script>
 </body>
 
 </html>

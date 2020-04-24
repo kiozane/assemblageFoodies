@@ -2,32 +2,26 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--couleurNoir);
-    
+
     &>h1 {
-         @include titre;
-        
+        @include titre;
+
     }
-    .logo{
+
+    .logo {
         width: 15em;
-        margin-left: 2em;
-        
+        margin: 0 auto;
+
     }
 
     &>img {
         color: var(--couleurNoir);
     }
-    &>i{
-        color: var(--couleurBlanc);
-        
-    }
-    
 
-    .profil {
-        width: 1.8em;
-        position: absolute;
-        right: 1em;
-        top: 0.75em;
-        border: solid 3px var(--couleurBlanc);
-        padding: 0.25em;
+    i {
+        color: var(--couleurBlanc);
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

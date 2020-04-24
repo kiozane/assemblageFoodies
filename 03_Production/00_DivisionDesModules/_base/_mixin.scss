@@ -6,10 +6,36 @@
     font-size: 4vh;
 }
 
-@mixin setFlex($direction, $justify, $align){
-    display:flex;
+@mixin setFlex($direction, $justify, $align) {
+    display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
 
+@mixin profileAside {
+    display: flex;
+    flex-direction: column;
+    .profilAside {
+        width: 3em;
+        border: solid 3px var(--couleurNoir);
+        padding: 0.25em;
+    }
+
+    .contenu {
+        display: inline;
+        flex-grow: 40;
+    }
+
+    .prenom,
+    .nom {
+        text-align: center;
+        margin: 0.5em 0em 0em 0.5em;
+    }
+    .zoneP{
+        display: flex;
+    }
+    .pub {
+        width: 5em;
+    }
+}

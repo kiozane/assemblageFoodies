@@ -1,6 +1,8 @@
-ul{
-    display: none;
-}
+
 aside{
-    display: none;
+    @include profileAside; 
+    
+    .pub{
+        display: none;
+    }  
 }

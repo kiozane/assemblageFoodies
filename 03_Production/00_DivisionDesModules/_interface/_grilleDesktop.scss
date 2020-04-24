@@ -25,29 +25,15 @@
         justify-content: center;
 
         aside {
-            display: block;
+            display: flex;
+            
             padding-right: 2em;
-
+            
         }
 
-        .profilAside {
-            width: 5em;
-            border: solid 3px var(--couleurNoir);
-            padding: 0.25em;
-        }
-
-        .contenu {
+        @include profileAside;
+        .pub{
             display: inline;
-            flex-grow: 40;
-        }
-
-        .prenom,
-        .nom {
-            text-align: center;
-        }
-
-        .pub {
-            width: 5em;
         }
     }
 
