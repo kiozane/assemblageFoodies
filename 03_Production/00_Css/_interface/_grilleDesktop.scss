@@ -1,15 +1,19 @@
 @media screen and (min-width: 767px) {
     header {
-        background-image: url(../../../_assets/_link/entete-original.jpg);
+        background-image: url(../_img/_link/entete-original-assets/entete-474.jpg);
+    
         background-size: cover;
         height: 20vh;
+        width: 100vw;
 
         i {
             display: none;
         }
 
         img {
-            display: none;
+            display: inline;
+            height: 10vw;
+            align-self: center;
         } 
     }
 
@@ -66,6 +70,12 @@
 
 @media screen and (min-width: 1024px) {
     header {
-        background-size: cover;
+        background-image: url(../_img/_link/entete-original-assets/entete-864.jpg);
+        background-position: center;
+        img {
+           
+            height: 8vw;
+            
+        }
     }
 }

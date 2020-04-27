@@ -1,7 +1,7 @@
 .menuPrincipal {
     .fas {
         color: var(--couleurOrange);
-
+        z-index: 1000;
         &:hover {
             cursor: pointer;
         }
